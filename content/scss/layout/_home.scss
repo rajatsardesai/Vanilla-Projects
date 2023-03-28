@@ -1,0 +1,38 @@
+@import '../vendors/bootstrap/scss/bootstrap-grid';
+
+.nav-container {
+    @include media-breakpoint-up(md) {
+        background-color: $color-white;
+    }
+}
+
+#hero {
+
+    .hero-container {
+        min-height: calc(100vh - 5rem);
+
+        @include media-breakpoint-up(md) {
+            height: 70vh;
+            border-radius: 20px;
+        }
+    }
+}
+
+#projects {
+    .card-img-top {
+        min-height: 183px;
+    }
+
+    .card-body {
+        position: relative;
+
+        img {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top: -26%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

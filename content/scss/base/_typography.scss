@@ -1,0 +1,16 @@
+// Typography
+
+h1,
+.h1 {
+    @include fontSize(36);
+}
+
+h2,
+.h2 {
+    @include fontSize(39);
+}
+
+h5,
+.h5 {
+    @include fontSize(25);
+}

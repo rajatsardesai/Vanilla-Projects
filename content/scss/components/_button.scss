@@ -1,0 +1,13 @@
+#hero{
+    a{
+        border-radius: 20px;
+        background-color: $color-yellow;
+        animation: 3s zoom infinite;
+
+        @keyframes zoom {
+            0%{transform: scale(0.9);}
+            50%{transform: scale(1);}
+            100%{transform: scale(0.9);}
+        }
+    }
+}
