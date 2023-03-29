@@ -3,6 +3,9 @@
 h1,
 .h1 {
     @include fontSize(36);
+    @include media-breakpoint-up(md) {
+        @include fontSize(46);
+    }
 }
 
 h2,

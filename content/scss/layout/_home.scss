@@ -1,5 +1,3 @@
-@import '../vendors/bootstrap/scss/bootstrap-grid';
-
 .nav-container {
     @include media-breakpoint-up(md) {
         background-color: $color-white;
@@ -7,32 +5,42 @@
 }
 
 #hero {
-
     .hero-container {
+        position: relative;
         min-height: calc(100vh - 5rem);
 
         @include media-breakpoint-up(md) {
-            height: 70vh;
+            min-height: auto;
             border-radius: 20px;
         }
     }
-}
 
-#projects {
-    .card-img-top {
-        min-height: 183px;
-    }
+    @include media-breakpoint-up(md) {
+        .accent-1 {
+            @include heroAccents(85px, 85px, 50%, $color-yellow-400);
+            top: 0;
+            left: 0;
+            transform: translate(-28%, 50%);
+        }
 
-    .card-body {
-        position: relative;
+        .accent-2 {
+            @include heroAccents(69px, 69px, 10px, $color-yellow-300);
+            top: 0;
+            right: 0;
+            transform: translate(50%, -20%) rotate(45deg);
+        }
 
-        img {
-            width: 180px;
-            height: 180px;
-            position: absolute;
-            top: -26%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .accent-3 {
+            @include heroAccents(77px, 77px, 10px, $color-yellow-500);
+            bottom: 0;
+            left: 0;
+            transform: translate(100%, 0%) rotate(35deg);
+        }
+        .accent-4 {
+            @include heroAccents(124px, 124px, 0, $color-white);
+            bottom: 0;
+            right: 0;
+            transform: translate(0%, 30%);
         }
     }
 }

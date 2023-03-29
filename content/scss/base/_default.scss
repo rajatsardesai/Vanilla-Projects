@@ -5,5 +5,8 @@ body{
 }
 
 .container{
-    max-width: 1140px !important;
+    max-width: 720px !important;
+    @include media-breakpoint-up(lg) {
+        max-width: 960px !important;
+    }
 }

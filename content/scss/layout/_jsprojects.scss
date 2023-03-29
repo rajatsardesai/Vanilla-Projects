@@ -1,0 +1,16 @@
+#dom-projects{
+    height: 100vh;
+    h2{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -15%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 112px;
+            height: 3px;
+            background-color: $color-yellow;
+        }
+    }
+}

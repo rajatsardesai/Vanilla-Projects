@@ -1,0 +1,33 @@
+// Global cards transition
+
+.card {
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+#projects {
+    .card {
+        &:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card-img-top {
+            min-height: 183px;
+        }
+
+        .card-body {
+            position: relative;
+
+            img {
+                width: 180px;
+                height: 180px;
+                position: absolute;
+                top: -26%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
