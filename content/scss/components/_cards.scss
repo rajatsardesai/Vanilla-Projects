@@ -1,5 +1,4 @@
 // Global cards transition
-
 .card {
     &:hover{
         transform: scale(1.1);
@@ -7,6 +6,7 @@
     }
 }
 
+// Card transition on hover
 #projects {
     .card {
         &:hover{

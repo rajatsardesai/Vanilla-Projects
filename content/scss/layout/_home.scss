@@ -1,9 +1,11 @@
+// Navbar container
 .nav-container {
     @include media-breakpoint-up(md) {
         background-color: $color-white;
     }
 }
 
+// Hero Section Accents
 #hero {
     .hero-container {
         position: relative;

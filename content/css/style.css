@@ -37104,6 +37104,10 @@ body {
   background-color: #f9f9be;
 }
 
+.bg-yellow-700 {
+  background-color: #f7f7a8;
+}
+
 h1,
 .h1 {
   font-size: 2.25rem !important;
@@ -37240,6 +37244,13 @@ h5,
   width: 112px;
   height: 3px;
   background-color: #eded27;
+}
+
+#countdown-timer {
+  height: 100vh;
+}
+#countdown-timer .timer-container {
+  border-radius: 20px;
 }
 
 /*!
