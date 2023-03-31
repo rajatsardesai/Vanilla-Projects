@@ -16,6 +16,35 @@
     <title>Countdown Timer</title>
 </head>
 <body>
-    
+    <!---- Countdown Timer Start ---->
+    <section id="countdown-timer" class="bg-yellow-700 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <input type="text" class="form-control bg-white text-center border-0 w-50 mx-auto mb-4 p-3 rounded" readonly>
+            <div class="timer-container w-50 mx-auto bg-white px-4 py-5">
+                <h5>New year begins in...🎉</h5>
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    <div class="days">
+                        <input type="text" id="day" class="form-control text-monospace text-center fs-2 border-0 w-75 py-3 rounded" readonly>
+                        <label for="day">days</label>
+                    </div>
+                    <div class="hours">
+                        <input type="text" id="hour" class="form-control text-monospace text-center fs-2 border-0 w-75 py-3 rounded" readonly>
+                        <label for="hour">hours</label>
+                    </div>
+                    <div class="minutes">
+                        <input type="text" id="minute" class="form-control text-monospace text-center fs-2 border-0 w-75 py-3 rounded" readonly>
+                        <label for="minute">minutes</label>
+                    </div>
+                    <div class="seconds">
+                        <input type="text" id="second" class="form-control text-monospace text-center fs-2 border-0 w-75 py-3 rounded" readonly>
+                        <label for="second">seconds</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---- Countdown Timer End ---->
+
+    <script src="./js/countdown.js"></script>
 </body>
 </html>
