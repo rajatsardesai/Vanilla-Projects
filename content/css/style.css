@@ -37108,6 +37108,26 @@ body {
   background-color: #f7f7a8;
 }
 
+.vh-100 {
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-75 {
+    width: 75% !important;
+  }
+}
+
+.br-20 {
+  border-radius: 20px;
+}
+
 h1,
 .h1 {
   font-size: 2.25rem !important;
@@ -37244,13 +37264,6 @@ h5,
   width: 112px;
   height: 3px;
   background-color: #eded27;
-}
-
-#countdown-timer {
-  height: 100vh;
-}
-#countdown-timer .timer-container {
-  border-radius: 20px;
 }
 
 /*!

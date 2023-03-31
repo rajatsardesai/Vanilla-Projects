@@ -22,6 +22,8 @@ setInterval(() => {
     clock();
 }, 1000);
 
+clock();
+
 /*
 1 day = 24 hours
 1 hour = 60 minutes

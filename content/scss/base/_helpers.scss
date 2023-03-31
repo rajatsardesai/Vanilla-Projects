@@ -34,3 +34,25 @@
 .bg-yellow-700 {
     background-color: $color-yellow-700;
 }
+
+// dimentions
+.vh-100{
+    height: 100vh;
+}
+
+.w-md-50{
+    @include media-breakpoint-up(md) {
+        width: 50% !important;
+    }
+}
+
+.w-md-75{
+    @include media-breakpoint-up(md) {
+        width: 75% !important;
+    }
+}
+
+// border-radius
+.br-20{
+    border-radius: 20px;
+}
