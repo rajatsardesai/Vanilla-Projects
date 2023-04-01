@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Javascript projects for absolute beginners. Learn arguably the most popular programming language and build amazing real world projects." />
+    <meta name="keywords" content="Vanilla, JavaScript, Projects">
+    <meta name="author" content="Rajat Sardesai">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <!---- Quiz App Start ---->
+    <section id="quiz-app" class="d-flex justify-content-center align-items-center vh-100 bg-yellow-700">
+        <div class="quiz-container w-md-50 mx-auto bg-white px-4 py-5 br-20 shadow">
+            <h5 id="quest" class="fs-1"></h5>
+            <div class="options">
+                <input type="radio" class="option" name="option" id="option-a" value="a">
+                <label for="option-a" class="fs-4 ms-2">Option a</label>
+            </div>
+            <div class="options">
+                <input type="radio" class="option" name="option" id="option-b" value="b">
+                <label for="option-b" class="fs-4 ms-2">Option b</label>
+            </div>
+            <div class="options">
+                <input type="radio" class="option" name="option" id="option-c" value="c">
+                <label for="option-c" class="fs-4 ms-2">Option c</label>
+            </div>
+            <div class="options">
+                <input type="radio" class="option" name="option" id="option-d" value="d">
+                <label for="option-d" class="fs-4 ms-2">Option d</label>
+            </div>
+            <button id="submit-btn" class="bg-yellow border-0 py-2 px-3 mt-3 rounded" onclick="submitQuiz()" type="submit">Submit</button>
+        </div>
+    </section>
+    <!---- Quiz App End ---->
+
+    <script src="./js/quizapp.js"></script>
+</body>
+
+</html>
