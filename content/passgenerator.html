@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Javascript projects for absolute beginners. Learn arguably the most popular programming language and build amazing real world projects." />
+    <meta name="keywords" content="Vanilla, JavaScript, Projects">
+    <meta name="author" content="Rajat Sardesai">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <!---- Quiz App Start ---->
+    <section id="quiz-app" class="d-flex justify-content-center align-items-center vh-100 bg-yellow-700">
+        <div class="quiz-container w-md-25 mx-auto bg-white px-4 py-5 br-20 shadow">
+            <input type="text" id="pass-box" class="form-control my-3 fs-3" value="Test" readonly>
+            <div class="options d-flex justify-content-between">
+                <label for="pass-length" class="fs-4 ms-2">Password Length</label>
+                <input type="number" class="pass-length form-control w-25" name="option" id="pass-length">
+            </div>
+            <div class="options d-flex justify-content-between">
+                <label for="upper-case" class="fs-4 ms-2">Contains Uppercase</label>
+                <input type="checkbox" class="upper-case" name="option" id="upper-case">
+            </div>
+            <div class="options d-flex justify-content-between">
+                <label for="lower-case" class="fs-4 ms-2">Contains Lowercase</label>
+                <input type="checkbox" class="lower-case" name="option" id="lower-case">
+            </div>
+            <div class="options d-flex justify-content-between">
+                <label for="numbers" class="fs-4 ms-2">Contains Numbers</label>
+                <input type="checkbox" class="numbers" name="option" id="numbers">
+            </div>
+            <div class="options d-flex justify-content-between">
+                <label for="symbols" class="fs-4 ms-2">Contains Symbols</label>
+                <input type="checkbox" class="symbols" name="option" id="symbols">
+            </div>
+            <button id="submit-btn" class="bg-yellow border-0 py-2 px-3 mt-3 rounded w-100">Submit</button>
+        </div>
+    </section>
+    <!---- Quiz App End ---->
+
+    <script src="./js/passgenerator.js"></script>
+</body>
+
+</html>
