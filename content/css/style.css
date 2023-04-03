@@ -37128,6 +37128,10 @@ body {
   border-radius: 20px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 h1,
 .h1 {
   font-size: 2.25rem !important;
@@ -37188,6 +37192,18 @@ h5,
   top: -26%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.notes-card {
+  width: 400px;
+  height: 400px;
+}
+.notes-card .card-body textarea {
+  resize: none;
+}
+.notes-card .card-body textarea:focus {
+  outline: 0;
+  border: 0;
 }
 
 @media (min-width: 768px) {
