@@ -18,23 +18,30 @@ const saveTodos = () => {
     const todos = document.querySelectorAll(".list-group-item");
     const data = [];
     todos.forEach(todo => {
-        data.push(todo.innerText);
+        if (todo.classList.contains("text-decoration-line-through")) {
+            data.push({ "text": todo.innerText, "mark": "text-decoration-line-through" });
+        } else {
+            data.push({ "text": todo.innerText });
+        }
     });
     if (data.length === 0) {
         localStorage.removeItem("todos");
     } else {
         localStorage.setItem("todos", JSON.stringify(data));
     }
-}
+};
 
 // Function to add todos
-const addTodo = (todo) => {
+const addTodo = (todo, mark) => {
     const listItem = document.createElement("li");
     const classLists = ["list-group-item", "d-flex", "justify-content-between", "align-items-start", "font-xs-18"];
-    classLists.forEach(classes => listItem.classList.add(classes));
+    classLists.forEach(classes => {
+        listItem.classList.add(classes);
+        listItem.classList.add(mark);
+    });
     listItem.innerHTML = `
-        ${todo}
-        <i class="delete fa-solid fa-times fa-lg text-dark p-3 cursor-pointer"></i>`;
+            ${todo}
+            <i class="delete fa-solid fa-times fa-lg text-dark p-3 cursor-pointer"></i>`;
     todoBox.appendChild(listItem);
 
     // Code to mark todo as done
@@ -57,7 +64,13 @@ const addTodo = (todo) => {
     function () {
         const lsTodos = JSON.parse(localStorage.getItem("todos"));
         if (lsTodos !== null) {
-            lsTodos.forEach(todo => addTodo(todo));
+            lsTodos.forEach(todo => {
+                if (todo.mark) {
+                    addTodo(todo.text, todo.mark)
+                } else {
+                    addTodo(todo.text);
+                }
+            });
         }
     }
 )()
