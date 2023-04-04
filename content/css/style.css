@@ -37132,6 +37132,10 @@ body {
   cursor: pointer;
 }
 
+.list-style-none {
+  list-style: none;
+}
+
 h1,
 .h1 {
   font-size: 2.25rem !important;
@@ -37265,9 +37269,6 @@ h5,
   }
 }
 
-#dom-projects {
-  height: 100vh;
-}
 #dom-projects h2, #dom-projects .h2 {
   position: relative;
 }
