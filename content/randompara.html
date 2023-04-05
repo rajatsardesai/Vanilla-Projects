@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Javascript projects for absolute beginners. Learn arguably the most popular programming language and build amazing real world projects." />
+    <meta name="keywords" content="Vanilla, JavaScript, Projects">
+    <meta name="author" content="Rajat Sardesai">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <title>Random Paragraph App</title>
+</head>
+
+<body>
+    <main>
+        <!---- Random Paragraph App Start ---->
+        <section id="random-app" class="vh-100 bg-yellow-700 p-5">
+            <div class="d-flex justify-content-center align-items-center">
+                <label for="numbers" class="pe-3">Paragraphs:</label>
+                <input type="number" id="numbers" class="w-25 form-control font-xs-20" value="5" autofocus
+                    autocomplete="off" />
+                <button id="generate-btn" onclick="generate()" class="bg-yellow border-0 py-2 px-3 ms-3 rounded">Generate</button>
+            </div>
+            <div class="text-center mt-4" id="data">
+            </div>
+        </section>
+        <!---- Random Paragraph App End ---->
+    </main>
+
+    <script src="./js/randompara.js"></script>
+</body>
+
+</html>
